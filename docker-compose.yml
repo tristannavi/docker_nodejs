@@ -8,7 +8,7 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
-    image: localhost:5000/untitled_node-app
+    image: tristannavi/untitled_node-app
     environment:
       - PORT=3000
     depends_on:
